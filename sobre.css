@@ -1,0 +1,575 @@
+
+
+/* sobre.css - Estilos específicos para a página "Sobre" */
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 6rem 2rem 8rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-wave {
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.hero-wave svg {
+    width: 100%;
+    height: 100%;
+    fill: #f8f9fa;
+}
+
+/* About Intro */
+.about-intro {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+
+.tech-tag {
+    background-color: #6a11cb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Augustos Section */
+.augustos-section {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.augustos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.augusto-card, .mission-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.augusto-card:hover, .mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.augusto-avatar {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.augusto-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.augusto-role {
+    color: #6a11cb;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.augusto-bio {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.augusto-social {
+    margin-top: 1.5rem;
+}
+
+.social-link.instagram {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #E4405F;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    border: 2px solid #E4405F;
+    transition: all 0.3s ease;
+}
+
+.social-link.instagram:hover {
+    background-color: #E4405F;
+    color: white;
+}
+
+.mission-icon {
+    font-size: 3rem;
+    color: #6a11cb;
+    margin-bottom: 1.5rem;
+}
+
+.mission-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.mission-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.mission-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.mission-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    color: #555;
+}
+
+.mission-list i {
+    color: #00C851;
+    margin-top: 0.2rem;
+}
+
+/* Project Details */
+.project-details {
+    padding: 5rem 2rem;
+    background-color: #f8f9fa;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #6a11cb;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Educational Purpose */
+.educational-purpose {
+    padding: 5rem 2rem;
+    background-color: white;
+}
+
+.purpose-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.purpose-text {
+    flex: 1;
+}
+
+.purpose-text h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.purpose-text > p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.purpose-list {
+    margin: 2.5rem 0;
+}
+
+.purpose-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.purpose-item i {
+    color: #00C851;
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+}
+
+.purpose-item h4 {
+    color: #333;
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.purpose-item p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.disclaimer {
+    background-color: #fff8e1;
+    border-left: 4px solid #ffc107;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.disclaimer i {
+    color: #ff9800;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.disclaimer p {
+    margin: 0;
+    color: #5d4037;
+}
+
+.purpose-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.purpose-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Call to Action */
+.call-to-action {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.cta-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+}
+
+.cta-note i {
+    color: #ff4081;
+}
+
+/* Footer (ajustes para página sobre) */
+.footer-tagline {
+    color: #bbb;
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-educational {
+    color: #999;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.footer-links h4, .footer-social h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.social-note {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Botões */
+.btn-primary, .btn-secondary, .btn-instagram {
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #ff4081;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e91e63;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn-instagram {
+    background-color: #E4405F;
+    color: white;
+}
+
+.btn-instagram:hover {
+    background-color: #C13584;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .about-container, .purpose-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .about-image, .purpose-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 4rem 1rem 6rem;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-buttons, .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary, .btn-instagram {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .about-intro, .augustos-section, .project-details, 
+    .educational-purpose, .call-to-action {
+        padding: 3rem 1rem;
+    }
+    
+    .augusto-card, .mission-card {
+        padding: 2rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
